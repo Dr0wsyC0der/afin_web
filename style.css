@@ -2284,3 +2284,156 @@ input:focus {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-dark);
 }
+/* Мобильная оптимизация - Дополнительные улучшения */
+@media (max-width: 768px) {
+    /* Улучшение читаемости текста */
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+        padding: 0 10px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+    
+    /* Оптимизация навигации для мобильных */
+    .nav-menu.active {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Улучшение касательных элементов */
+    .nav-menu a,
+    .btn-primary,
+    .btn-secondary,
+    .industry-tab,
+    .form-group input,
+    .form-group select {
+        min-height: 48px; /* Минимальная высота для касаний */
+    }
+    
+    /* Адаптация таблиц */
+    .comparison-table {
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+    }
+    
+    /* Оптимизация сеток */
+    .solution-grid,
+    .integrations-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    /* Улучшение форм */
+    .form-group input,
+    .form-group select {
+        font-size: 16px; /* Предотвращает масштабирование в iOS */
+    }
+    
+    /* Оптимизация изображений */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Улучшение кнопок CTA */
+    .hero-actions {
+        padding: 0 10px;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 1rem;
+    }
+    
+    /* Оптимизация карточек */
+    .module-item,
+    .case-card,
+    .problem-item,
+    .audience-item {
+        padding: 1.5rem;
+        margin: 0 -10px;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    /* Улучшение футера */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    /* Улучшение табов */
+    .industry-tabs {
+        flex-direction: column;
+    }
+    
+    .industry-tab {
+        flex: 1 1 auto;
+        min-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Оптимизация для очень маленьких экранов */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    .lead-form {
+        padding: 1.5rem;
+    }
+}
+
+/* Предотвращение горизонтального скролла */
+@media (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Улучшение производительности на мобильных */
+@media (hover: none) and (pointer: coarse) {
+    /* Отключаем сложные анимации для мобильных */
+    .btn-primary::before,
+    .press-kit .btn-secondary::before {
+        display: none;
+    }
+    
+    /* Упрощаем hover-эффекты */
+    .solution-item:hover,
+    .problem-item:hover,
+    .audience-item:hover {
+        transform: none;
+    }
+    
+    /* Увеличиваем зону клика для тач-устройств */
+    .nav-menu a,
+    .industry-tab,
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 16px !important;
+    }
+}
