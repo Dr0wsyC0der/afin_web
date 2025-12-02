@@ -2284,3 +2284,91 @@ input:focus {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-dark);
 }
+
+
+
+
+
+  /* Базовые настройки для мобильного телефона */
+.module-item {
+    display: flex ;
+    flex-direction: column !important; /* Сначала текст, потом изображение */
+    gap: 20px; /* Пространство между текстом и картинкой */
+}
+
+.module-content {
+    flex: 1; /* Занимать всю доступную высоту */
+}
+
+.module-visual {
+    flex: 1; /* Занимать оставшуюся высоту */
+}
+
+/* Размеры и ограничения для изображений */
+.module-visual img {
+    max-width: 100%; /* Ограничиваем максимальное значение ширины */
+    height: auto; /* Сохраняем пропорциональность высоты */
+    object-fit: cover; /* Масштабируем картинку без потери качества */
+}
+
+/* Центрировка текста */
+.module-content h3 {
+    text-align: center;
+}
+
+/* Улучшение внешнего вида списка преимуществ */
+.module-content ul.benefits-list li {
+    margin-bottom: 10px;
+}
+
+/* На десктопе (PC) - как было: текст слева, изображение справа */
+@media screen and (min-width: 768px) {
+    .module-item {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    /* Четные модули: текст слева, изображение справа */
+    .module-item:nth-child(odd) {
+        flex-direction: row !important;
+    }
+    
+    /* Нечетные модули: изображение слева, текст справа */
+    .module-item:nth-child(even) {
+        flex-direction: row-reverse !important;
+    }
+    
+    .module-content {
+        flex: 1 1 50%;
+    }
+    
+    .module-visual {
+        flex: 1 1 50%;
+    }
+    
+    .module-content h3 {
+        text-align: left; /* На десктопе выравниваем по левому краю */
+    }
+    
+    .module-visual img {
+        max-height: 400px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+/* Улучшения для очень больших экранов */
+@media screen and (min-width: 1200px) {
+    .module-item {
+        gap: 4rem;
+    }
+    
+    .module-content h3 {
+        font-size: 1.75rem;
+    }
+    
+    .module-visual img {
+        max-height: 500px;
+    }
+}
