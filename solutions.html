@@ -1,49 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отраслевые решения FLOWSMB для вашего бизнеса</title>
-    <meta name="description" content="Специализированные решения для производств, логистики, финансового сектора и ритейла. Оптимизация бизнес-процессов в вашей отрасли">
+    <title>Отраслевые решения AFIN для вашего бизнеса</title>
+    <meta name="description"
+        content="Специализированные решения для производств, логистики, финансового сектора и ритейла. Оптимизация бизнес-процессов в вашей отрасли">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .industry-tabs {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-        .industry-tab {
-            padding: 1rem 2rem;
-            background: #f5f7fa;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .industry-tab.active {
-            background: #0A1A3A;
-            color: white;
-        }
-        .industry-content {
-            display: none;
-        }
-        .industry-content.active {
-            display: block;
-        }
-        .solution-detail {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-        }
-    </style>
 </head>
+
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="index.html">FLOWSMB</a>
+                <a href="index.html">AFIN</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Главная</a></li>
@@ -52,21 +23,24 @@
                     <ul class="dropdown-menu">
                         <li><a href="product.html#platform">Платформа</a></li>
                         <li><a href="product.html#modules">Модули</a></li>
+                        <li><a href="product.html#tech">Технологии</a></li>
+                        <li><a href="product.html#integrations">Интеграции</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="solutions.html" class="active">Решения</a>
+                    <a href="solutions.html">Решения</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#manufacturing">Производство</a></li>
-                        <li><a href="#logistics">Логистика</a></li>
-                        <li><a href="#finance">Финансы</a></li>
-                        <li><a href="#retail">Ритейл</a></li>
+                        <li><a href="solutions.html#manufacturing">Производство</a></li>
+                        <li><a href="solutions.html#logistics">Логистика</a></li>
+                        <li><a href="solutions.html#finance">Финансы</a></li>
+                        <li><a href="solutions.html#retail">Ритейл</a></li>
                     </ul>
                 </li>
                 <li><a href="cases.html">Кейсы</a></li>
                 <li><a href="about.html">О компании</a></li>
+                <li><a href="prices.html">Тарифы</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="#demo" class="btn-demo">Демо-доступ</a></li>
+                <li><a href="contacts.html#demo" class="btn-demo">Демо-доступ</a></li>
             </ul>
         </nav>
     </header>
@@ -89,16 +63,19 @@
 
             <div id="manufacturing" class="industry-content active">
                 <div class="solution-detail">
-                    <h2>Решение для производственных предприятий</h2>
-                    
+                    <h2>Решение для производства</h2>
+
                     <div class="problem-section">
                         <h3>Типичные проблемы в производстве:</h3>
-                        <ul>
-                            <li>Неоптимальные производственные циклы</li>
-                            <li>Простои оборудования и неэффективное использование мощностей</li>
-                            <li>Колебания спроса и сложности в управлении запасами</li>
-                            <li>Высокие операционные издержки</li>
-                        </ul>
+                        <div class="problem-section-text">
+                            <ul>
+                                <li>Неоптимальные производственные циклы</li>
+                                <li>Простои оборудования и неэффективное использование мощностей</li>
+                                <li>Колебания спроса и сложности в управлении запасами</li>
+                                <li>Высокие операционные издержки</li>
+                            </ul>
+
+                        </div>
                     </div>
 
                     <div class="solution-section">
@@ -121,12 +98,14 @@
 
                     <div class="results-section">
                         <h3>Ожидаемые результаты:</h3>
-                        <ul>
-                            <li>Снижение производственных издержек на 15-25%</li>
-                            <li>Увеличение использования мощностей на 20-30%</li>
-                            <li>Сокращение времени цикла производства на 18-22%</li>
-                            <li>Уменьшение запасов сырья и готовой продукции на 25-35%</li>
-                        </ul>
+                        <div class="results-section-text">
+                            <ul>
+                                <li>Снижение производственных издержек на 15-25%</li>
+                                <li>Увеличение использования мощностей на 20-30%</li>
+                                <li>Сокращение времени цикла производства на 18-22%</li>
+                                <li>Уменьшение запасов сырья и готовой продукции на 25-35%</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,15 +113,17 @@
             <div id="logistics" class="industry-content">
                 <div class="solution-detail">
                     <h2>Решение для логистики и дистрибуции</h2>
-                    
+
                     <div class="problem-section">
                         <h3>Типичные проблемы в логистике:</h3>
-                        <ul>
-                            <li>Простои транспорта и неэффективное использование парка</li>
-                            <li>Сложности в планировании оптимальных маршрутов</li>
-                            <li>Срывы сроков доставки и низкая предсказуемость</li>
-                            <li>Высокие складские издержки</li>
-                        </ul>
+                        <div class="problem-section-text">
+                            <ul>
+                                <li>Простои транспорта и неэффективное использование парка</li>
+                                <li>Сложности в планировании оптимальных маршрутов</li>
+                                <li>Срывы сроков доставки и низкая предсказуемость</li>
+                                <li>Высокие складские издержки</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="solution-section">
@@ -168,15 +149,17 @@
             <div id="finance" class="industry-content">
                 <div class="solution-detail">
                     <h2>Решение для финансового сектора</h2>
-                    
+
                     <div class="problem-section">
                         <h3>Типичные проблемы в финансовом секторе:</h3>
-                        <ul>
-                            <li>Кредитные риски и невозвраты</li>
-                            <li>Мошеннические операции и финансовые преступления</li>
-                            <li>Неэффективные внутренние процессы одобрения</li>
-                            <li>Сложности в управлении регуляторными требованиями</li>
-                        </ul>
+                        <div class="problem-section-text">
+                            <ul>
+                                <li>Кредитные риски и невозвраты</li>
+                                <li>Мошеннические операции и финансовые преступления</li>
+                                <li>Неэффективные внутренние процессы одобрения</li>
+                                <li>Сложности в управлении регуляторными требованиями</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="solution-section">
@@ -202,15 +185,17 @@
             <div id="retail" class="industry-content">
                 <div class="solution-detail">
                     <h2>Решение для ритейла</h2>
-                    
+
                     <div class="problem-section">
                         <h3>Типичные проблемы в ритейле:</h3>
-                        <ul>
-                            <li>Неточность прогноза спроса и потеря продаж</li>
-                            <li>Сложности в управлении ассортиментом</li>
-                            <li>Неоптимальное планирование персонала</li>
-                            <li>Высокие логистические издержки</li>
-                        </ul>
+                        <div class="problem-section-text">
+                            <ul>
+                                <li>Неточность прогноза спроса и потеря продаж</li>
+                                <li>Сложности в управлении ассортиментом</li>
+                                <li>Неоптимальное планирование персонала</li>
+                                <li>Высокие логистические издержки</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="solution-section">
@@ -218,7 +203,8 @@
                         <div class="solution-features">
                             <div class="feature">
                                 <h4>AI для прогнозирования продаж</h4>
-                                <p>Точное предсказание спроса с учетом сезонности, промо-акций и внешних факторов</p>
+                                <p>Точное предсказание спроса с учетом сезонности, промо-акций и внешних факторов
+                                </p>
                             </div>
                             <div class="feature">
                                 <h4>Оптимизация ассортимента</h4>
@@ -260,24 +246,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>FLOWSMB</h3>
-                    <p>Комплексная платформа для прогнозирующего управления бизнес-процессами</p>
+                    <h3>AFIN</h3>
+                    <p>Платформа прогнозирующего управления бизнес-процессами</p>
                 </div>
                 <div class="footer-contacts">
                     <h4>Контакты</h4>
-                    <p>Email: info@flowsmb.ru</p>
-                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: <a href="mailto:info@afin.ru">info@afin.ru</a></p>
+                    <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
                 </div>
                 <div class="footer-social">
                     <h4>Социальные сети</h4>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Telegram</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Telegram</a>
                 </div>
                 <div class="footer-links">
                     <h4>Документы</h4>
-                    <a href="privacy.html">Политика конфиденциальности</a>
-                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="/files/privacy.pdf" download>Политика конфиденциальности</a>
+                    <a href="/files/terms.pdf" download>Пользовательское соглашение</a>
+                    <a href="contacts.html">Контакты</a>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 AFIN. Все права защищены.</p>
             </div>
         </div>
     </footer>
@@ -291,10 +281,10 @@
                 document.querySelectorAll('.industry-tab').forEach(t => t.classList.remove('active'));
                 document.querySelectorAll('.industry-content').forEach(c => c.classList.remove('active'));
                 document.querySelectorAll('.industry-form').forEach(f => f.classList.remove('active'));
-                
+
                 // Add active class to clicked tab
                 tab.classList.add('active');
-                
+
                 // Show corresponding content
                 const industry = tab.dataset.industry;
                 document.getElementById(industry).classList.add('active');
@@ -304,4 +294,5 @@
     </script>
     <script src="script.js"></script>
 </body>
+
 </html>

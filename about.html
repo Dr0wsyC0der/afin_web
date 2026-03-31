@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,15 @@
             gap: 2rem;
             margin: 2rem 0;
         }
+
         .team-member {
             background: white;
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
         .team-photo {
             width: 150px;
             height: 150px;
@@ -31,33 +34,38 @@
             justify-content: center;
             color: #666;
         }
+
         .partners-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            gap: 2rem;
             margin: 2rem 0;
         }
+
         .partner-item {
             background: white;
             padding: 1.5rem;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        
     </style>
 </head>
+
 <body>
     <!-- УНИВЕРСАЛЬНЫЙ HEADER -->
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="index.html">FLOWSMB</a>
+                <a href="index.html">AFIN</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Главная</a></li>
                 <li class="dropdown">
                     <a href="product.html">Продукт</a>
                     <ul class="dropdown-menu">
+                        <li><a href="product.html#platform">Платформа</a></li>
                         <li><a href="product.html#modules">Модули</a></li>
                         <li><a href="product.html#tech">Технологии</a></li>
                         <li><a href="product.html#integrations">Интеграции</a></li>
@@ -73,7 +81,8 @@
                     </ul>
                 </li>
                 <li><a href="cases.html">Кейсы</a></li>
-                <li><a href="about.html" class="active">О компании</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="prices.html">Тарифы</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
                 <li><a href="contacts.html#demo" class="btn-demo">Демо-доступ</a></li>
             </ul>
@@ -91,8 +100,12 @@
         <div class="container">
             <h2>Наша миссия</h2>
             <div class="mission-content">
-                <p>Мы верим, что современный бизнес должен управляться на основе данных, а не интуиции. Наша миссия — предоставить инструменты, которые позволяют компаниям не просто анализировать прошлое, а проактивно создавать будущее.</p>
-                <p>FLOWSMB объединяет процессное моделирование, предиктивную аналитику и искусственный интеллект, чтобы дать руководителям возможность принимать обоснованные решения и моделировать последствия до их реализации.</p>
+                <p>Мы верим, что современный бизнес должен управляться на основе данных, а не интуиции. Наша миссия —
+                    предоставить инструменты, которые позволяют компаниям не просто анализировать прошлое, а проактивно
+                    создавать будущее.</p>
+                <p>AFIN объединяет процессное моделирование, предиктивную аналитику и искусственный интеллект, чтобы
+                    дать руководителям возможность принимать обоснованные решения и моделировать последствия до их
+                    реализации.</p>
             </div>
         </div>
     </section>
@@ -102,38 +115,31 @@
             <h2>Команда</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="team-photo">Фото</div>
+                         <img src="photo/Utkin.JPEG" alt="фото" width="250" height="320">
                     <h3>А.А. Юткин</h3>
                     <p class="position">Генеральный директор</p>
-                    <p>Опыт в управлении IT-проектами более 10 лет. Эксперт в области цифровой трансформации бизнеса.</p>
+                    <p>Более 2 лет управления IT-проектами, Эксперт в области цифровой трансформации бизнеса.
+                    </p>
                 </div>
                 <div class="team-member">
-                    <div class="team-photo">Фото</div>
+                    <img src="photo/Lev.JPEG" alt="фото" width="250" height="320">
                     <h3>Л.Р. Коршунович</h3>
                     <p class="position">Управляющий проектом</p>
-                    <p>Специалист по внедрению сложных IT-решений. Успешно реализовала более 50 проектов в различных отраслях.</p>
+                    <p>Специалист по внедрению сложных IT-решений. Успешно реализовала более 10 проектов в различных
+                        отраслях.</p>
                 </div>
                 <div class="team-member">
-                    <div class="team-photo">Фото</div>
-                    <h3>Технический директор</h3>
+                    <img src="photo/Sorokin.JPEG" alt="фото" width="250" height="320">
+                    <h3>А.Е. Сорокин</h3>
                     <p class="position">Технический директор</p>
-                    <p>Архитектор платформы с опытом разработки масштабируемых систем. Эксперт в области AI и машинного обучения.</p>
+                    <p>Архитектор платформы с опытом разработки масштабируемых систем. Мастер в области AI и машинного
+                        обучения.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="partners">
-        <div class="container">
-            <h2>Технологические партнеры</h2>
-            <div class="partners-grid">
-                <div class="partner-item">МТУСИ</div>
-                <div class="partner-item">ITHub</div>
-                <div class="partner-item">Яндекс.Облако</div>
-                <div class="partner-item">Selectel</div>
-            </div>
-        </div>
-    </section>
+   
 
     <section class="awards">
         <div class="container">
@@ -166,37 +172,37 @@
         </div>
     </section>
 
-    <!-- УНИВЕРСАЛЬНЫЙ FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>FLOWSMB</h3>
-                    <p>Комплексная платформа для прогнозирующего управления бизнес-процессами</p>
+                    <h3>AFIN</h3>
+                    <p>Платформа прогнозирующего управления бизнес-процессами</p>
                 </div>
                 <div class="footer-contacts">
                     <h4>Контакты</h4>
-                    <p>Email: info@flowsmb.ru</p>
-                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: <a href="mailto:info@flowsmb.ru">info@afin.ru</a></p>
+                    <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
                 </div>
                 <div class="footer-social">
                     <h4>Социальные сети</h4>
                     <a href="#" target="_blank">LinkedIn</a>
-                    <a href="#" target="_blank">Telegram</a>
+                    <a href="https://t.me/FlowSMB" target="_blank">Telegram</a>
                 </div>
                 <div class="footer-links">
                     <h4>Документы</h4>
-                    <a href="privacy.html">Политика конфиденциальности</a>
-                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="files/privacy.pdf" download="Политика конфиденциальности">Политика конфиденциальности</a>
+                    <a href="files/terms.pdf" download="Пользовательское соглашение">Пользовательское соглашение</a>
                     <a href="contacts.html">Контакты</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 FLOWSMB. Все права защищены.</p>
+                <p>© 2025 AFIN. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

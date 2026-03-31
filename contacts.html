@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты FLOWSMB - Свяжитесь с нами</title>
-    <meta name="description" content="Контактная информация FLOWSMB. Форма обратной связи и демо-доступ">
+    <title>Контакты AFIN - Свяжитесь с нами</title>
+    <meta name="description" content="Свяжитесь с AFIN: демо, продажи, поддержка. Адрес, телефон, email, карта.">
     <link rel="stylesheet" href="style.css">
+    <!-- Иконки (можно заменить на свои SVG) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <!-- УНИВЕРСАЛЬНЫЙ HEADER -->
     <header class="header">
         <nav class="nav">
             <div class="nav-brand">
-                <a href="index.html">FLOWSMB</a>
+                <a href="index.html">AFIN</a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Главная</a></li>
                 <li class="dropdown">
                     <a href="product.html">Продукт</a>
                     <ul class="dropdown-menu">
+                        <li><a href="product.html#platform">Платформа</a></li>
                         <li><a href="product.html#modules">Модули</a></li>
                         <li><a href="product.html#tech">Технологии</a></li>
                         <li><a href="product.html#integrations">Интеграции</a></li>
@@ -35,49 +40,108 @@
                 </li>
                 <li><a href="cases.html">Кейсы</a></li>
                 <li><a href="about.html">О компании</a></li>
-                <li><a href="contacts.html" class="active">Контакты</a></li>
-                <li><a href="#demo" class="btn-demo">Демо-доступ</a></li>
+                <li><a href="prices.html">Тарифы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="contacts.html#demo" class="btn-demo">Демо-доступ</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="container">
             <h1>Свяжитесь с нами</h1>
-            <p class="hero-subtitle">Готовы обсудить, как FLOWSMB может помочь вашему бизнесу?</p>
+            <p class="hero-subtitle">Выберите подходящий способ связи — мы ответим в ближайшее время</p>
         </div>
     </section>
 
-    <section class="contact-info">
+    <!-- REASON FOR INQUIRY -->
+    <section class="inquiry-section">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>info@flowsmb.ru</p>
-                    <p>Общие вопросы и партнерство</p>
+            <p class="inquiry-subtitle">Выберите цель обращения</p>
+            <div class="inquiry-grid">
+                <!-- 1. Демо -->
+                <div class="inquiry-card">
+                    <div class="inquiry-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Запросить демо</h3>
+                    <p>Узнайте, как AFIN работает в деле. Демо-доступ на 14 дней.</p>
+                    <a href="#demo" class="btn-outline">Запросить демо</a>
                 </div>
-                <div class="contact-item">
-                    <h3>Телефон</h3>
-                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-                    <p>Многоканальный телефон</p>
+
+                <!-- 2. Продажи -->
+                <div class="inquiry-card">
+                    <div class="inquiry-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Вопрос по продажам</h3>
+                    <p>Консультация, цены, условия подключения и внедрения.</p>
+                    <a href="mailto:sales@afin.ru" class="btn-outline">Написать в продажи</a>
                 </div>
-                <div class="contact-item">
+
+                <!-- 3. Поддержка -->
+                <div class="inquiry-card">
+                    <div class="inquiry-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
                     <h3>Техподдержка</h3>
-                    <p>support@flowsmb.ru</p>
-                    <p>Для клиентов и технических вопросов</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Партнерства</h3>
-                    <p>partners@flowsmb.ru</p>
-                    <p>По вопросам технологического партнерства</p>
+                    <p>Помощь текущим клиентам. Быстро решаем любые вопросы.</p>
+                    <a href="mailto:support@afin.ru" class="btn-outline">Связаться с поддержкой</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="demo" class="contact-form-section">
+    <!-- КОНТАКТЫ + КАРТА -->
+    <section class="contact-map-section">
         <div class="container">
-            <h2>Запросите демо-доступ</h2>
+            <div class="contact-map-grid">
+                <!-- Контакты -->
+                <div class="contact-details">
+                    <h2>Офис AFIN</h2>
+                    <p class="contact-address">
+                        123456, г. Москва, ул. Тверская, д. 10, офис 502<br>
+                        <strong>Россия</strong>
+                    </p>
+
+                    <div class="contact-info-item">
+                        <strong>Бесплатный звонок:</strong> 8 800 100-50-50<br>
+                        <strong>Телефон:</strong> +7 (495) 123-45-67<br>
+                        <strong>Fax:</strong> +7 (495) 123-45-68<br>
+                        <strong>Email:</strong> <a href="mailto:info@afin.ru">info@afin.ru</a>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3>Отдел продаж</h3>
+                        <p>Email: <a href="mailto:sales@afin.ru">sales@afin.ru</a></p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3>Международные продажи</h3>
+                        <p>Email: <a href="mailto:global@afin.ru">global@afin.ru</a></p>
+                    </div>
+                </div>
+
+                <!-- Карта -->
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e&lang=ru_RU&scroll=true"
+                        frameborder="0" allowfullscreen="true" style="width:100%;height:100%;border-radius:16px;">
+                    </iframe>
+                    <div class="map-label">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>AFIN Headquarters<br>ул. Тверская, 10, Москва</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ДЕМО -->
+    <section id="demo" class="demo-form-section">
+        <div class="container">
+            <h2>Получить демо-доступ</h2>
             <form class="contact-form">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Имя" required>
@@ -89,51 +153,53 @@
                 </div>
                 <div class="form-group">
                     <input type="tel" name="phone" placeholder="Телефон" required>
-                    <select name="interest">
-                        <option value="">Выберите интересующий вопрос</option>
+                    <select name="interest" required>
+                        <option value="" disabled selected>Цель обращения</option>
                         <option value="demo">Демо-доступ</option>
-                        <option value="partnership">Партнерство</option>
-                        <option value="integration">Интеграция</option>
+                        <option value="sales">Продажи</option>
+                        <option value="support">Поддержка</option>
+                        <option value="partnership">Партнёрство</option>
                         <option value="other">Другое</option>
                     </select>
                 </div>
-                <textarea name="message" placeholder="Сообщение или интересующий вопрос..." rows="5"></textarea>
-                <button type="submit" class="btn-primary">Отправить запрос</button>
+                <textarea name="message" placeholder="Ваш вопрос или комментарий..." rows="4"></textarea>
+                <button type="submit" class="btn-primary">Отправить заявку</button>
             </form>
         </div>
     </section>
 
-    <!-- УНИВЕРСАЛЬНЫЙ FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>FLOWSMB</h3>
-                    <p>Комплексная платформа для прогнозирующего управления бизнес-процессами</p>
+                    <h3>AFIN</h3>
+                    <p>Платформа прогнозирующего управления бизнес-процессами</p>
                 </div>
                 <div class="footer-contacts">
                     <h4>Контакты</h4>
-                    <p>Email: info@flowsmb.ru</p>
-                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: <a href="mailto:info@afin.ru">info@afin.ru</a></p>
+                    <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
                 </div>
                 <div class="footer-social">
                     <h4>Социальные сети</h4>
                     <a href="#" target="_blank">LinkedIn</a>
-                    <a href="#" target="_blank">Telegram</a>
+                    <a href="https://t.me/FlowSMB" target="_blank">Telegram</a>
                 </div>
                 <div class="footer-links">
                     <h4>Документы</h4>
-                    <a href="privacy.html">Политика конфиденциальности</a>
-                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="files/privacy.pdf" download="Политика конфиденциальности">Политика конфиденциальности</a>
+                    <a href="files/terms.pdf" download="Пользовательское соглашение">Пользовательское соглашение</a>
                     <a href="contacts.html">Контакты</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 FLOWSMB. Все права защищены.</p>
+                <p>© 2025 AFIN. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

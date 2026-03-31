@@ -1,4 +1,4 @@
-# FLOWSMB Website Project
+# AFIN Website Project
 
 ## Структура проекта
 - `index.html` - Главная страница (лендинг)
